@@ -1,6 +1,12 @@
 import pandas as pd
 from sqlalchemy import text
 from pathlib import Path
+import sys
+
+# Add project root to Python path so imports work
+project_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(project_root))
+
 from src.utils.db import get_engine
 
 # Use the shared database connection
