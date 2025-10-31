@@ -4,6 +4,8 @@ import os
 from sqlalchemy import create_engine
 import datetime as dt
 from dotenv import load_dotenv
+
+
 load_dotenv()  # loads .env from the current working directory
 # Load current season play-by-play data
 year=dt.date.today().year
