@@ -2,4 +2,6 @@ nflreadpy
 pandas
 sqlalchemy
 psycopg2-binary
-jupyter
+dotenv
+flask
+
