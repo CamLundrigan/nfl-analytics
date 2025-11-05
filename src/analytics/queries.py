@@ -12,8 +12,8 @@ from src.utils.db import get_engine
 # Use the shared database connection
 engine = get_engine()
 
-# Read SQL file
-sql_file = Path("sql/analyses/receiving_td_leaders.sql")
+# Read SQL file (relative to project root)
+sql_file = project_root / "sql" / "analyses" / "receiving_td_leaders.sql"
 sql_query = sql_file.read_text()
 
 # Execute query and get results as DataFrame
