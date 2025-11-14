@@ -13,7 +13,7 @@ from src.utils.db import get_engine
 engine = get_engine()
 
 # Read SQL file (relative to project root)
-sql_file = project_root / "sql" / "analyses" / "receiving_td_leaders.sql"
+sql_file = project_root / "sql" / "analyses" / input("Enter the name of the SQL file: ")
 sql_query = sql_file.read_text()
 
 # Execute query and get results as DataFrame
